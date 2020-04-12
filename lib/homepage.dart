@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -151,9 +152,9 @@ class _MyHomePageState extends State<MyHomePage> {
     return CupertinoTabScaffold(
       tabBar: CupertinoTabBar(
         items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.add)),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.add)),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.add)),
+          BottomNavigationBarItem(icon: Icon(Icons.list)),
+          BottomNavigationBarItem(icon: Icon(Icons.map)),
+          BottomNavigationBarItem(icon: Icon(Icons.add)),
         ],
       ),
       tabBuilder: (BuildContext context, int index) {
@@ -163,7 +164,7 @@ class _MyHomePageState extends State<MyHomePage> {
               builder: (BuildContext context) {
                 return CupertinoPageScaffold(
                   navigationBar: CupertinoNavigationBar(
-                    middle: Text('Page 1 of tab $index'),
+                    middle: Text('thriftr'),
                   ),
                   child: SafeArea(
                     top: false,
@@ -198,7 +199,7 @@ class _MyHomePageState extends State<MyHomePage> {
               builder: (BuildContext context) {
                 return CupertinoPageScaffold(
                     navigationBar: CupertinoNavigationBar(
-                      middle: Text('Page 1 of tab $index'),
+                      middle: Text('Listings near me'),
                     ),
                     child: MapView());
               },
@@ -208,7 +209,7 @@ class _MyHomePageState extends State<MyHomePage> {
               builder: (BuildContext context) {
                 return CupertinoPageScaffold(
                     navigationBar: CupertinoNavigationBar(
-                      middle: Text('Page 1 of tab $index'),
+                      middle: Text('Add a new product'),
                     ),
                     child: SingleChildScrollView(
                         child: NewProduct(_addNewProduct)));

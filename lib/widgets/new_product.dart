@@ -13,47 +13,50 @@ class NewProduct extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
-    return Card(
-      child: Column(children: [
-        TextField(
-          decoration: InputDecoration(
-              labelText: 'Product Name'
-          ),
-          controller: nameController
-        ),
-        TextField(
-          decoration: InputDecoration(
-              labelText: 'Your Street'
-          ),
-          controller: streetController
-        ),
-        TextField(
+    return Container(
+      padding: EdgeInsets.only(top: 100.0),
+      child: Card(
+        child: Column(children: [
+          TextField(
             decoration: InputDecoration(
-                labelText: 'Your City'
+                labelText: 'Product Name'
             ),
-            controller: cityController
-        ),
-        TextField(
-            decoration: InputDecoration(
-                labelText: 'Your State'
-            ),
-            controller: stateController
-        ),
-        TextField(
-          decoration: InputDecoration(
-              labelText: 'Your Name'
+            controller: nameController
           ),
-          controller: sellerNameController
-        ),
-        FlatButton(
-          child: Text('Add Product'),
-          textColor: Colors.purple,
-          onPressed: () async {
-            addProduct(nameController.text, streetController.text, sellerNameController.text, cityController.text, stateController.text);
+          TextField(
+            decoration: InputDecoration(
+                labelText: 'Your Street'
+            ),
+            controller: streetController
+          ),
+          TextField(
+              decoration: InputDecoration(
+                  labelText: 'Your City'
+              ),
+              controller: cityController
+          ),
+          TextField(
+              decoration: InputDecoration(
+                  labelText: 'Your State'
+              ),
+              controller: stateController
+          ),
+          TextField(
+            decoration: InputDecoration(
+                labelText: 'Your Name'
+            ),
+            controller: sellerNameController
+          ),
+          FlatButton(
+            child: Text('Add Product'),
+            textColor: Colors.purple,
+            onPressed: () async {
+              addProduct(nameController.text, streetController.text, sellerNameController.text, cityController.text, stateController.text);
 
-          },
-        ),
-      ]),
+            },
+          ),
+        ]),
+      ),
     );
   }
 }

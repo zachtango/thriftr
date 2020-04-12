@@ -9,22 +9,14 @@ class ProductList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      top: false,
-      bottom: false,
-      minimum: const EdgeInsets.only(
-        left: 16,
-        top: 8,
-        bottom: 8,
-        right: 8,
-      ),
-      child: Column(
-        children: productList.map((product) {
-          return Row(children: [
-            ProductWidget(product.sellerName, product.address, product.name)
-          ]);
-        }).toList(),
-      ),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: productList.map((product) {
+        return Row(children: [
+          ProductWidget(product.sellerName, product.address, product.name)
+        ]);
+      }).toList(),
     );
   }
 }
@@ -40,17 +32,13 @@ class ProductWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Icon(CupertinoIcons.photo_camera, size: 50),
-              Text(this.productName),
-              Text('Seller: ' + this.sellerName),
-              Text(this.address)
-            ],
-          ),
+          Icon(CupertinoIcons.photo_camera, size: 50),
+          Text(this.productName),
+          Text('Seller: ' + this.sellerName),
+          Text(this.address)
         ],
       ),
     );
