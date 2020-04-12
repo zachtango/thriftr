@@ -63,7 +63,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _fetchCoords() async {
     List<Map> coords = [];
-
+    List<Product> products = [];
+    int index = 0;
     setState((){
       _isLoading3 = true;
     });
@@ -72,8 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
       try {
         var query = product.address;
         var key = 'AIzaSyDHiIBQ_mx43wig_dWYW1-T39SusMUJzrk';
-        var api =
-            'https://maps.googleapis.com/maps/api/geocode/json?address=$query&key=$key';
+        var api = 'https://maps.googleapis.com/maps/api/geocode/json?address=$query&key=$key';
 
         http.Response response = await http.get(api);
         var extractedData =
@@ -83,8 +83,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
         //print(location);
 
+        products.add(product);
+        products[index].setCoords(location);
+        //print('DEBUG');
+        //print(products);
         coords.add(location);
 
+        index++;
         return product;
       } catch (e) {
         //print(e);
@@ -92,11 +97,16 @@ class _MyHomePageState extends State<MyHomePage> {
       }
     }));
 
+
     setState(() {
+      _productList = products;
       _coordList = coords;
       _isLoading3 = false;
     });
-    print(_coordList);
+
+    //print(_coordList);
+    //print('PRODUCT LIST');
+    //print(_productList[0].coords);
   }
 
   _addNewProduct(String name, String street, String sellerName, String city,
@@ -136,7 +146,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     List<Widget> _widgetOptions = <Widget>[
       SingleChildScrollView(
-        child: _isLoading1
+        child: _isLoading2
             ? Center(child: CupertinoActivityIndicator())
             : Column(
                 children: [
@@ -151,7 +161,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
       ),
       _isLoading3 ? Center(child: CupertinoActivityIndicator())
-          : MapView(_coordList),
+          : MapView(_coordList, _productList),
       SingleChildScrollView(child: NewProduct(_addNewProduct))
     ];
 
@@ -209,7 +219,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     child: _isLoading3
                         ? Center(child: CupertinoActivityIndicator())
-                        : MapView(_coordList));
+                        : MapView(_coordList, _productList));
               },
             );
           case 2:

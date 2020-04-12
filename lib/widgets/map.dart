@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+import '../models/product.dart';
+
 class MapView extends StatefulWidget {
   final List<Map> coords;
+  final List<Product> products;
 
-  MapView(this.coords);
+  MapView(this.coords, this.products);
 
   @override
   _MapViewState createState() => _MapViewState();
@@ -15,7 +18,7 @@ class _MapViewState extends State<MapView> {
 
   GoogleMapController mapController;
 
-  final LatLng _center = const LatLng(32.521563, -95.677433);
+  final LatLng _center = const LatLng(33.0648016 + 0.0005, -96.7495247 + 0.0005);
   Map<MarkerId, Marker> markers = <MarkerId, Marker>{};
   MarkerId selectedMarker;
   int _markerIdCounter = 1;
@@ -24,21 +27,24 @@ class _MapViewState extends State<MapView> {
     mapController = controller;
 
     print('WIDGETS');
-    print(widget.coords);
+    print(widget.products.toString());
 
-    widget.coords.forEach((coord){
+    widget.products.forEach((product){
       String markerIdVal = 'marker_id_$_markerIdCounter';
       _markerIdCounter++;
       MarkerId markerId = MarkerId(markerIdVal);
+
+      String name = product.name;
+      String address = product.address;
 
       // Create a marker (in the future, increment markerIdCounter so that you can use it to generate IDs)
       Marker marker = Marker(
         markerId: markerId,
         position: LatLng(
-            coord['lat'],
-            coord['lng']
+            product.coords['lat'],
+            product.coords['lng']
         ),
-        infoWindow: InfoWindow(title: "Hello there", snippet: "Snippet"),
+        infoWindow: InfoWindow(title: name, snippet: address),
         onTap: () {
           _onMarkerTapped(markerId);
         },
@@ -47,6 +53,8 @@ class _MapViewState extends State<MapView> {
       setState(() {
         markers[markerId] = marker;
       });
+
+
     });
   }
 
