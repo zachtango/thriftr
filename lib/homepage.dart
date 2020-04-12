@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -132,17 +132,14 @@ class _MyHomePageState extends State<MyHomePage> {
     List<Widget> _widgetOptions = <Widget>[
       SingleChildScrollView(
         child: _isLoading1 ? Center(
-            child: CircularProgressIndicator()) : Column(
+            child: CupertinoActivityIndicator()) : Column(
           children: [
-            FlatButton(
+            CupertinoButton(
               child: Text('Refresh'),
-              textColor: Colors.purple,
               onPressed: (){
                 _fetchProducts();
               },
             ),
-            _isLoading2 ? Center(
-                child: CircularProgressIndicator()) :
             ProductList(_productList),
           ],
         ),
@@ -150,43 +147,29 @@ class _MyHomePageState extends State<MyHomePage> {
       MapView(),
       SingleChildScrollView(
         child: NewProduct(_addNewProduct)
-      ),
-      Text(
-        'Index 2: List',
-      ),
+      )
     ];
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('BottomNavigationBar Sample'),
-      ),
-      body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            title: Text('Home'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            title: Text('Business'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            title: Text('School'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            title: Text('School'),
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
-        onTap: _onItemTapped,
-      ),
-    );
+    return CupertinoTabScaffold(
+            tabBar: CupertinoTabBar(
+              items: <BottomNavigationBarItem> [
+                BottomNavigationBarItem(icon: Icon(CupertinoIcons.add)),
+                BottomNavigationBarItem(icon: Icon(CupertinoIcons.add)),
+                BottomNavigationBarItem(icon: Icon(CupertinoIcons.add)),
+              ],
+            ),
+            tabBuilder: (BuildContext context, int index) {
+              return CupertinoTabView(
+                builder: (BuildContext context) {
+                  return CupertinoPageScaffold(
+                    navigationBar: CupertinoNavigationBar(
+                      middle: Text('Page 1 of tab $index'),
+                    ),
+                    child: _widgetOptions[index]
+                  );
+                },
+              );
+            },
+          );
   }
 }
