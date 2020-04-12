@@ -19,7 +19,15 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _selectedIndex = 0;
+  String img1 = '../images/adidastrefoil.jpg';
+  String img2 = '../images/';
+  String img3;
+  String img4;
+  String img5;
+  String img6;
+  String img7;
+  String img8;
+  String img9;
 
   List<Product> _productList = [];
   List<Map> _coordList = [];
@@ -50,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
       //print(json.decode(response.body));
 
       extractedData.forEach((k, v) =>
-          products.add(Product(v['name'], v['address'], v['sellerName'], k)));
+          products.add(Product(v['name'], v['address'], v['sellerName'], k, 'images/${v['name']}.jpg')));
 
       setState(() {
         _productList = products;
@@ -127,18 +135,12 @@ class _MyHomePageState extends State<MyHomePage> {
             }))
         .then((response) {
       final newProduct = Product(
-          name, address, sellerName, json.decode(response.body)['name']);
+          name, address, sellerName, json.decode(response.body)['name'], 'images/$name.jpg');
 
       setState(() {
         _productList.add(newProduct);
         _isLoading1 = false;
       });
-    });
-  }
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
     });
   }
 

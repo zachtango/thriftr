@@ -47,6 +47,12 @@ class NewProduct extends StatelessWidget{
             ),
             controller: sellerNameController
           ),
+          TextField(
+              decoration: InputDecoration(
+                  labelText: 'Picture Link'
+              ),
+              controller: sellerNameController
+          ),
           FlatButton(
             child: Text('Add Product'),
             textColor: Colors.purple,
