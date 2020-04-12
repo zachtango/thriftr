@@ -14,13 +14,44 @@ class ProductList extends StatelessWidget{
       children: productList.map((product){
         return Row(
           children: [
-            Text(product.name),
-            Text(product.address),
-            Text(product.sellerName),
+            ProductWidget(product.sellerName, product.address, product.name)
           ]
         );
       }).toList(),
     );
   }
 
+}
+
+class ProductWidget extends StatelessWidget {
+  String sellerName;
+  String address;
+  String productName;
+
+  ProductWidget(this.sellerName, this.address, this.productName);
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          Text(
+            'PRODUCT',
+            style: TextStyle(
+                fontSize: 19.0,
+             )
+          ),
+          Column(
+            children: <Widget>[
+              Icon(CupertinoIcons.photo_camera, size: 50),
+              Text(this.productName),
+              Text('Seller: ' + this.sellerName),
+              Text(this.address)
+            ],
+          ),
+        ],
+      ),
+    );
+  }
 }

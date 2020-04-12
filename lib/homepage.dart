@@ -145,6 +145,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       MapView(),
+      MapView(),
       SingleChildScrollView(
         child: NewProduct(_addNewProduct)
       )
@@ -159,16 +160,51 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             tabBuilder: (BuildContext context, int index) {
-              return CupertinoTabView(
-                builder: (BuildContext context) {
-                  return CupertinoPageScaffold(
-                    navigationBar: CupertinoNavigationBar(
-                      middle: Text('Page 1 of tab $index'),
-                    ),
-                    child: _widgetOptions[index]
+              switch(index) {
+                case 0: return CupertinoTabView(builder: (BuildContext context) {
+                      return CupertinoPageScaffold(
+                        navigationBar: CupertinoNavigationBar(
+                          middle: Text('Page 1 of tab $index'),
+                        ),
+                        child: SingleChildScrollView(
+                            child: _isLoading1 ? Center(
+                                child: CupertinoActivityIndicator()) : Column(
+                              children: [
+                                CupertinoButton(
+                                  child: Text('Refresh'),
+                                  onPressed: (){
+                                    _fetchProducts();
+                                  },
+                                ),
+                                ProductList(_productList),
+                              ],
+                            ),
+                          ),
+                      );
+                    },
                   );
-                },
-              );
+                  case 1: return CupertinoTabView(builder: (BuildContext context) {
+                      return CupertinoPageScaffold(
+                        navigationBar: CupertinoNavigationBar(
+                          middle: Text('Page 1 of tab $index'),
+                        ),
+                        child: MapView()
+                      );
+                    },
+                  );
+                  case 2: return CupertinoTabView(builder: (BuildContext context) {
+                      return CupertinoPageScaffold(
+                        navigationBar: CupertinoNavigationBar(
+                          middle: Text('Page 1 of tab $index'),
+                        ),
+                        child: SingleChildScrollView(
+                                child: NewProduct(_addNewProduct)
+                              )
+                      );
+                    },
+                  );
+              }
+              
             },
           );
   }
