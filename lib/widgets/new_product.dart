@@ -52,7 +52,7 @@ class NewProduct extends StatelessWidget{
               decoration: InputDecoration(
                   labelText: 'Picture Link'
               ),
-              controller: sellerNameController
+              controller: imgController
           ),
           FlatButton(
             child: Text('Add Product'),
