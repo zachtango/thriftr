@@ -179,7 +179,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       left: 16,
                       top: 80,
                       bottom: 8,
-                      right: 8,
+                      right: 80,
                     ),
                     child: SingleChildScrollView(
                       child: _isLoading1
