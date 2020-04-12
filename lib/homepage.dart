@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-
 import './widgets/user_products.dart';
 import './widgets/map.dart';
 import './widgets/new_product.dart';
@@ -11,14 +10,11 @@ import './models/product.dart';
 
 const url = 'https://thriftr-a3ec4.firebaseio.com/products.json';
 
-
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key}) : super(key: key);
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
-
-  
 }
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -34,28 +30,27 @@ class _MyHomePageState extends State<MyHomePage> {
   int airCount = 0;
 
   @override
-  void initState(){
+  void initState() {
     super.initState();
     _fetchProducts();
   }
 
-  void _fetchProducts(){
-    setState((){
+  void _fetchProducts() {
+    setState(() {
       _isLoading2 = true;
     });
 
     final List<Product> products = [];
 
     // FIXME add catch error functionality
-    http.get(url).then((response){
+    http.get(url).then((response) {
       final extractedData = json.decode(response.body) as Map<String, dynamic>;
       //print(json.decode(response.body));
 
       extractedData.forEach((k, v) =>
-          products.add(Product(v['name'], v['address'], v['sellerName'], k))
-      );
+          products.add(Product(v['name'], v['address'], v['sellerName'], k)));
 
-      setState((){
+      setState(() {
         _productList = products;
         _isLoading2 = false;
       });
@@ -64,18 +59,19 @@ class _MyHomePageState extends State<MyHomePage> {
     _fetchCoords();
   }
 
-  void _fetchCoords() async{
-
+  void _fetchCoords() async {
     List<Map> coords = [];
 
-    await Future.wait(_productList.map((product) async{
+    await Future.wait(_productList.map((product) async {
       try {
         var query = product.address;
         var key = 'AIzaSyDHiIBQ_mx43wig_dWYW1-T39SusMUJzrk';
-        var api = 'https://maps.googleapis.com/maps/api/geocode/json?address=$query&key=$key';
+        var api =
+            'https://maps.googleapis.com/maps/api/geocode/json?address=$query&key=$key';
 
         http.Response response = await http.get(api);
-        var extractedData = json.decode(response.body)['results'][0]['geometry'];
+        var extractedData =
+            json.decode(response.body)['results'][0]['geometry'];
 
         var location = extractedData['location'];
 
@@ -84,42 +80,44 @@ class _MyHomePageState extends State<MyHomePage> {
         coords.add(location);
 
         return product;
-      } catch(e){
-
+      } catch (e) {
         //print(e);
         return product;
       }
     }));
 
-    setState((){
+    setState(() {
       _coordList = coords;
     });
     print(_coordList);
   }
 
-  _addNewProduct(String name, String street, String sellerName, String city, String state){
-    setState((){
+  _addNewProduct(String name, String street, String sellerName, String city,
+      String state) {
+    setState(() {
       _isLoading1 = true;
     });
 
     final address = '${street}, ${city}, ${state}';
 
     // post request
-    http.post(url, body: json.encode({
-      'name': name,
-      'address': address,
-      'sellerName': sellerName,
-    })).then((response) {
+    http
+        .post(url,
+            body: json.encode({
+              'name': name,
+              'address': address,
+              'sellerName': sellerName,
+            }))
+        .then((response) {
+      final newProduct = Product(
+          name, address, sellerName, json.decode(response.body)['name']);
 
-      final newProduct = Product(name, address, sellerName, json.decode(response.body)['name']);
-
-      setState((){
+      setState(() {
         _productList.add(newProduct);
         _isLoading1 = false;
       });
     });
   }
-
 
   void _onItemTapped(int index) {
     setState(() {
@@ -128,84 +126,96 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     List<Widget> _widgetOptions = <Widget>[
       SingleChildScrollView(
-        child: _isLoading1 ? Center(
-            child: CupertinoActivityIndicator()) : Column(
-          children: [
-            CupertinoButton(
-              child: Text('Refresh'),
-              onPressed: (){
-                _fetchProducts();
-              },
-            ),
-            ProductList(_productList),
-          ],
-        ),
+        child: _isLoading1
+            ? Center(child: CupertinoActivityIndicator())
+            : Column(
+                children: [
+                  CupertinoButton(
+                    child: Text('Refresh'),
+                    onPressed: () {
+                      _fetchProducts();
+                    },
+                  ),
+                  ProductList(_productList),
+                ],
+              ),
       ),
       MapView(),
       MapView(),
-      SingleChildScrollView(
-        child: NewProduct(_addNewProduct)
-      )
+      SingleChildScrollView(child: NewProduct(_addNewProduct))
     ];
 
     return CupertinoTabScaffold(
-            tabBar: CupertinoTabBar(
-              items: <BottomNavigationBarItem> [
-                BottomNavigationBarItem(icon: Icon(CupertinoIcons.add)),
-                BottomNavigationBarItem(icon: Icon(CupertinoIcons.add)),
-                BottomNavigationBarItem(icon: Icon(CupertinoIcons.add)),
-              ],
-            ),
-            tabBuilder: (BuildContext context, int index) {
-              switch(index) {
-                case 0: return CupertinoTabView(builder: (BuildContext context) {
-                      return CupertinoPageScaffold(
-                        navigationBar: CupertinoNavigationBar(
-                          middle: Text('Page 1 of tab $index'),
-                        ),
-                        child: SingleChildScrollView(
-                            child: _isLoading1 ? Center(
-                                child: CupertinoActivityIndicator()) : Column(
+      tabBar: CupertinoTabBar(
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.add)),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.add)),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.add)),
+        ],
+      ),
+      tabBuilder: (BuildContext context, int index) {
+        switch (index) {
+          case 0:
+            return CupertinoTabView(
+              builder: (BuildContext context) {
+                return CupertinoPageScaffold(
+                  navigationBar: CupertinoNavigationBar(
+                    middle: Text('Page 1 of tab $index'),
+                  ),
+                  child: SafeArea(
+                    top: false,
+                    bottom: false,
+                    minimum: const EdgeInsets.only(
+                      left: 16,
+                      top: 80,
+                      bottom: 8,
+                      right: 8,
+                    ),
+                    child: SingleChildScrollView(
+                      child: _isLoading1
+                          ? Center(child: CupertinoActivityIndicator())
+                          : Column(
                               children: [
                                 CupertinoButton(
                                   child: Text('Refresh'),
-                                  onPressed: (){
+                                  onPressed: () {
                                     _fetchProducts();
                                   },
                                 ),
                                 ProductList(_productList),
                               ],
                             ),
-                          ),
-                      );
-                    },
-                  );
-                  case 1: return CupertinoTabView(builder: (BuildContext context) {
-                      return CupertinoPageScaffold(
-                        navigationBar: CupertinoNavigationBar(
-                          middle: Text('Page 1 of tab $index'),
-                        ),
-                        child: MapView()
-                      );
-                    },
-                  );
-                  case 2: return CupertinoTabView(builder: (BuildContext context) {
-                      return CupertinoPageScaffold(
-                        navigationBar: CupertinoNavigationBar(
-                          middle: Text('Page 1 of tab $index'),
-                        ),
-                        child: SingleChildScrollView(
-                                child: NewProduct(_addNewProduct)
-                              )
-                      );
-                    },
-                  );
-              }
-              
-            },
-          );
+                    ),
+                  ),
+                );
+              },
+            );
+          case 1:
+            return CupertinoTabView(
+              builder: (BuildContext context) {
+                return CupertinoPageScaffold(
+                    navigationBar: CupertinoNavigationBar(
+                      middle: Text('Page 1 of tab $index'),
+                    ),
+                    child: MapView());
+              },
+            );
+          case 2:
+            return CupertinoTabView(
+              builder: (BuildContext context) {
+                return CupertinoPageScaffold(
+                    navigationBar: CupertinoNavigationBar(
+                      middle: Text('Page 1 of tab $index'),
+                    ),
+                    child: SingleChildScrollView(
+                        child: NewProduct(_addNewProduct)));
+              },
+            );
+        }
+      },
+    );
   }
 }

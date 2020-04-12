@@ -2,25 +2,31 @@ import 'package:flutter/cupertino.dart';
 
 import '../models/product.dart';
 
-class ProductList extends StatelessWidget{
+class ProductList extends StatelessWidget {
   List<Product> productList;
 
   ProductList(this.productList);
 
   @override
-  Widget build(BuildContext context){
-
-    return Column(
-      children: productList.map((product){
-        return Row(
-          children: [
+  Widget build(BuildContext context) {
+    return SafeArea(
+      top: false,
+      bottom: false,
+      minimum: const EdgeInsets.only(
+        left: 16,
+        top: 8,
+        bottom: 8,
+        right: 8,
+      ),
+      child: Column(
+        children: productList.map((product) {
+          return Row(children: [
             ProductWidget(product.sellerName, product.address, product.name)
-          ]
-        );
-      }).toList(),
+          ]);
+        }).toList(),
+      ),
     );
   }
-
 }
 
 class ProductWidget extends StatelessWidget {
@@ -34,15 +40,10 @@ class ProductWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Column(
-        mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          Text(
-            'PRODUCT',
-            style: TextStyle(
-                fontSize: 19.0,
-             )
-          ),
           Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Icon(CupertinoIcons.photo_camera, size: 50),
               Text(this.productName),
