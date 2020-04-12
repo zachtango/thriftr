@@ -9,13 +9,14 @@ class ProductList extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
+
     return Column(
       children: productList.map((product){
         return Row(
           children: [
             Text(product.name),
             Text(product.address),
-            Text(product.sellerName)
+            Text(product.sellerName),
           ]
         );
       }).toList(),

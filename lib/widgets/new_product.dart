@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 
-
 class NewProduct extends StatelessWidget{
   final Function addProduct;
   final nameController = TextEditingController();
-  final addressController = TextEditingController();
+  final streetController = TextEditingController();
   final sellerNameController = TextEditingController();
-  var _isLoading = false;
+  final cityController = TextEditingController();
+  final stateController = TextEditingController();
 
   NewProduct(this.addProduct);
 
@@ -23,9 +23,21 @@ class NewProduct extends StatelessWidget{
         ),
         TextField(
           decoration: InputDecoration(
-              labelText: 'Your Address'
+              labelText: 'Your Street'
           ),
-          controller: addressController
+          controller: streetController
+        ),
+        TextField(
+            decoration: InputDecoration(
+                labelText: 'Your City'
+            ),
+            controller: cityController
+        ),
+        TextField(
+            decoration: InputDecoration(
+                labelText: 'Your State'
+            ),
+            controller: stateController
         ),
         TextField(
           decoration: InputDecoration(
@@ -36,8 +48,9 @@ class NewProduct extends StatelessWidget{
         FlatButton(
           child: Text('Add Product'),
           textColor: Colors.purple,
-          onPressed: () {
-            addProduct(nameController.text, addressController.text, sellerNameController.text);
+          onPressed: () async {
+            addProduct(nameController.text, streetController.text, sellerNameController.text, cityController.text, stateController.text);
+
           },
         ),
       ]),

@@ -16,8 +16,11 @@ class UserProducts extends StatefulWidget{
 
 class _UserProductsState extends State<UserProducts>{
   List<Product> _productList = [];
+  List<Map> _coordList = [];
   var _isLoading = false;
   Future<List<Product>> futureProducts;
+
+  int airCount = 0;
 
   @override
   void initState(){
@@ -25,7 +28,7 @@ class _UserProductsState extends State<UserProducts>{
     _fetchProducts();
   }
 
-  _fetchProducts(){
+  void _fetchProducts(){
     setState((){
       _isLoading = true;
     });
@@ -38,7 +41,7 @@ class _UserProductsState extends State<UserProducts>{
       //print(json.decode(response.body));
 
       extractedData.forEach((k, v) =>
-          products.add(Product(v['address'], v['name'], v['sellerName'], k))
+          products.add(Product(v['name'], v['address'], v['sellerName'], k))
       );
 
       setState((){
@@ -46,28 +49,62 @@ class _UserProductsState extends State<UserProducts>{
         _isLoading = false;
       });
     });
+
+    _fetchCoords();
   }
 
-  _addNewProduct(String name, String address, String sellerName){
+  void _fetchCoords() async{
+
+    await Future.wait(_productList.map((product) async{
+      try {
+        var query = product.address;
+        var key = 'AIzaSyDHiIBQ_mx43wig_dWYW1-T39SusMUJzrk';
+        var api = 'https://maps.googleapis.com/maps/api/geocode/json?address=$query&key=$key';
+
+        http.Response response = await http.get(api);
+        var extractedData = json.decode(response.body)['results'][0]['geometry'];
+
+        var location = extractedData['location'];
+
+        //print(location);
+
+        _coordList.add(location);
+
+        return product;
+      } catch(e){
+
+        //print(e);
+        return product;
+      }
+    }));
+
+    print(_coordList);
+  }
+
+  _addNewProduct(String name, String street, String sellerName, String city, String state){
     setState((){
       _isLoading = true;
     });
+
+    final address = '${street}, ${city}, ${state}';
 
     // post request
     http.post(url, body: json.encode({
       'name': name,
       'address': address,
       'sellerName': sellerName,
-    })).then((response){
-      print(json.decode(response.body)['name']);
+    })).then((response) {
 
-      final newProduct = Product(name, address, sellerName, /*json.decode(response.body)['name']*/ '');
+      final newProduct = Product(name, address, sellerName, json.decode(response.body)['name']);
+
       setState((){
         _productList.add(newProduct);
         _isLoading = false;
       });
     });
   }
+
+
 
   @override
   Widget build(BuildContext context){
@@ -84,7 +121,6 @@ class _UserProductsState extends State<UserProducts>{
         ),
         NewProduct(_addNewProduct),
         ProductList(_productList),
-
       ]
     );
   }

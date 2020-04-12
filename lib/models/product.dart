@@ -6,6 +6,7 @@ class Product{
   final String sellerName;
   final String id;
 
+
   Product(@required this.name, @required this.address, @required this.sellerName, @required this.id);
 
 }
