@@ -8,6 +8,7 @@ class NewProduct extends StatelessWidget{
   final sellerNameController = TextEditingController();
   final cityController = TextEditingController();
   final stateController = TextEditingController();
+  final imgController = TextEditingController();
 
   NewProduct(this.addProduct);
 
