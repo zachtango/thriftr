@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\zacht\\.gradle\\caches\\transforms-2\\files-2.1\\c9ab7cd2b4f2b418530bbee3d47d5bd8\\jetified-play-services-basement-16.0.1\\res\\values-ms\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "204",
-                        "endOffsets": "451"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1309",
-                        "endColumns": "204",
-                        "endOffsets": "1509"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\zacht\\.gradle\\caches\\transforms-2\\files-2.1\\837d2764f93a15427b4f15263c4d239e\\jetified-play-services-base-16.0.1\\res\\values-ms\\values.xml",
+                    "source": "C:\\Users\\zacht\\.gradle\\caches\\transforms-2\\files-2.1\\5ac9ad6f13ea0190a3570ea7a43d9f59\\play-services-base-17.0.0\\res\\values-ms\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -52,6 +35,23 @@
                         "startOffsets": "105,213,418,550,658,889,1023,1173,1514,1758,1869,2075,2212,2442,2647,2744,2838",
                         "endColumns": "107,204,131,107,230,133,149,135,243,110,205,136,229,204,96,93,111",
                         "endOffsets": "208,413,545,653,884,1018,1168,1304,1753,1864,2070,2207,2437,2642,2739,2833,2945"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\zacht\\.gradle\\caches\\transforms-2\\files-2.1\\b34e07933de250e6ef870d6b1b1a8af3\\jetified-play-services-basement-17.0.0\\res\\values-ms\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "204",
+                        "endOffsets": "451"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1309",
+                        "endColumns": "204",
+                        "endOffsets": "1509"
                     }
                 }
             ]

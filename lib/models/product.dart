@@ -9,4 +9,5 @@ class Product{
 
   Product(@required this.name, @required this.address, @required this.sellerName, @required this.id);
 
+
 }

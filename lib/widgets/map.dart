@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+import '../models/product.dart';
+
 void main() => runApp(MapView());
 
 class MapView extends StatefulWidget {
 
+  List<Product> products;
+  List<Map> coords;
 
+  MapView(this.products, this.coords);
 
   @override
   _MapViewState createState() => _MapViewState();
 }
 
 class _MapViewState extends State<MapView> {
-
 
   GoogleMapController mapController;
 
@@ -24,7 +28,8 @@ class _MapViewState extends State<MapView> {
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
 
-    /*for (int i in array) {
+    var counter = 0;
+    widget.coords.forEach((product) {
       String markerIdVal = 'marker_id_$_markerIdCounter';
       _markerIdCounter++;
       MarkerId markerId = MarkerId(markerIdVal);
@@ -45,7 +50,8 @@ class _MapViewState extends State<MapView> {
       setState(() {
         markers[markerId] = marker;
       });
-    }*/
+    });
+
     final String markerIdVal = 'marker_id_$_markerIdCounter';
     final MarkerId markerId = MarkerId(markerIdVal);
 
