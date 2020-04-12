@@ -1,19 +1,21 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:1:1-30:12
-INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:1:1-30:12
-INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:1:1-30:12
-INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:1:1-30:12
-MERGED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:1:1-30:12
+ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:1:1-32:12
+MERGED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:1:1-32:12
 MERGED from [:location] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-10:12
+MERGED from [:google_maps_flutter] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\google_maps_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:location_web] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\location_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:geocoder] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\bcefb78d97a52691446ff707bb7efd85\jetified-play-services-location-16.0.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\837d2764f93a15427b4f15263c4d239e\jetified-play-services-base-16.0.1\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5c697fec7e55e9bb60005789c206ab6c\play-services-places-placereport-16.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\bb04a8afc2ddd206080923b9f3406059\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\c9ab7cd2b4f2b418530bbee3d47d5bd8\jetified-play-services-basement-16.0.1\AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\09be4c98f955b63e9a8cadeb6d33d870\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\10631bb3012ccad9c5c9285264903a3d\play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\b34e07933de250e6ef870d6b1b1a8af3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\b8b68c04ee72209a3beca37e17f7088d\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\f046f38cf99e9cbe4891b184ce64db19\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\0f0610cdcf96e6cfa9529b6a3246e3f6\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -25,7 +27,6 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\zacht\
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\ef0bef029ab70f5fb29de019060cf5fd\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5fdf5da548a469ca3cc39dc72a350a99\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\1403af03ba6e6e95b13bf5808de0f892\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\0a271e99b6771ad4a84318244d532fb7\core-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6e38f4e9d5bd10f4c7f28aa7b63ad3a1\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\23edc849475fdda61367cb003f9b9f93\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
@@ -47,26 +48,28 @@ INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\s
 		INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\debug\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:1:1-30:12
+		ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:1:1-32:12
 		INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\debug\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:1:1-30:12
+		ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:1:1-32:12
 		INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:1:11-69
 application
-ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:8:5-29:19
+ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:8:5-31:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\bcefb78d97a52691446ff707bb7efd85\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\bcefb78d97a52691446ff707bb7efd85\jetified-play-services-location-16.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\837d2764f93a15427b4f15263c4d239e\jetified-play-services-base-16.0.1\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\837d2764f93a15427b4f15263c4d239e\jetified-play-services-base-16.0.1\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5c697fec7e55e9bb60005789c206ab6c\play-services-places-placereport-16.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5c697fec7e55e9bb60005789c206ab6c\play-services-places-placereport-16.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\bb04a8afc2ddd206080923b9f3406059\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\bb04a8afc2ddd206080923b9f3406059\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\c9ab7cd2b4f2b418530bbee3d47d5bd8\jetified-play-services-basement-16.0.1\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\c9ab7cd2b4f2b418530bbee3d47d5bd8\jetified-play-services-basement-16.0.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\10631bb3012ccad9c5c9285264903a3d\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\10631bb3012ccad9c5c9285264903a3d\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\b34e07933de250e6ef870d6b1b1a8af3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\b34e07933de250e6ef870d6b1b1a8af3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\0a271e99b6771ad4a84318244d532fb7\core-1.0.0\AndroidManifest.xml:22:5-89
 MERGED from [androidx.core:core:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\0a271e99b6771ad4a84318244d532fb7\core-1.0.0\AndroidManifest.xml:22:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\52d4fecae8c1eb4103beef9198e64f51\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
@@ -103,34 +106,44 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:21:17-76
 	android:name
 		ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:21:27-74
-meta-data#flutterEmbedding
-ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:26:9-28:33
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:24:9-25:66
 	android:value
-		ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:28:13-30
+		ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:25:9-64
 	android:name
-		ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:27:13-44
+		ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:24:20-65
+meta-data#flutterEmbedding
+ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:28:9-30:33
+	android:value
+		ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:30:13-30
+	android:name
+		ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml:29:13-44
 uses-sdk
 INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\main\AndroidManifest.xml
 MERGED from [:location] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:location] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\google_maps_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\google_maps_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:location_web] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\location_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:location_web] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\location_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:geocoder] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:geocoder] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\bcefb78d97a52691446ff707bb7efd85\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\bcefb78d97a52691446ff707bb7efd85\jetified-play-services-location-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\837d2764f93a15427b4f15263c4d239e\jetified-play-services-base-16.0.1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\837d2764f93a15427b4f15263c4d239e\jetified-play-services-base-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5c697fec7e55e9bb60005789c206ab6c\play-services-places-placereport-16.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5c697fec7e55e9bb60005789c206ab6c\play-services-places-placereport-16.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\bb04a8afc2ddd206080923b9f3406059\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\bb04a8afc2ddd206080923b9f3406059\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\c9ab7cd2b4f2b418530bbee3d47d5bd8\jetified-play-services-basement-16.0.1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\c9ab7cd2b4f2b418530bbee3d47d5bd8\jetified-play-services-basement-16.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\09be4c98f955b63e9a8cadeb6d33d870\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\09be4c98f955b63e9a8cadeb6d33d870\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\10631bb3012ccad9c5c9285264903a3d\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\10631bb3012ccad9c5c9285264903a3d\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\b34e07933de250e6ef870d6b1b1a8af3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\b34e07933de250e6ef870d6b1b1a8af3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\b8b68c04ee72209a3beca37e17f7088d\fragment-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\b8b68c04ee72209a3beca37e17f7088d\fragment-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\f046f38cf99e9cbe4891b184ce64db19\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
@@ -153,8 +166,6 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\zach
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5fdf5da548a469ca3cc39dc72a350a99\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\1403af03ba6e6e95b13bf5808de0f892\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\1403af03ba6e6e95b13bf5808de0f892\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\0a271e99b6771ad4a84318244d532fb7\core-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\0a271e99b6771ad4a84318244d532fb7\core-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6e38f4e9d5bd10f4c7f28aa7b63ad3a1\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
@@ -189,6 +200,8 @@ INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\s
 		INJECTED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\debug\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\debug\AndroidManifest.xml:6:5-66
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
 	android:name
 		ADDED from C:\Users\zacht\Programming\TitanHacksApp\flutter_app\android\app\src\debug\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
@@ -199,17 +212,33 @@ uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from [:location] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-79
 	android:name
 		ADDED from [:location] C:\Users\zacht\Programming\TitanHacksApp\flutter_app\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\837d2764f93a15427b4f15263c4d239e\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\837d2764f93a15427b4f15263c4d239e\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\837d2764f93a15427b4f15263c4d239e\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\837d2764f93a15427b4f15263c4d239e\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\c9ab7cd2b4f2b418530bbee3d47d5bd8\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\b34e07933de250e6ef870d6b1b1a8af3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\c9ab7cd2b4f2b418530bbee3d47d5bd8\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\b34e07933de250e6ef870d6b1b1a8af3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\c9ab7cd2b4f2b418530bbee3d47d5bd8\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zacht\.gradle\caches\transforms-2\files-2.1\b34e07933de250e6ef870d6b1b1a8af3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58

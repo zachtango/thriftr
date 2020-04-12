@@ -25,6 +25,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List<Map> _coordList = [];
   var _isLoading1 = false;
   var _isLoading2 = false;
+  var _isLoading3 = false;
 
   Future<List<Product>> futureProducts;
 
@@ -63,6 +64,10 @@ class _MyHomePageState extends State<MyHomePage> {
   void _fetchCoords() async {
     List<Map> coords = [];
 
+    setState((){
+      _isLoading3 = true;
+    });
+
     await Future.wait(_productList.map((product) async {
       try {
         var query = product.address;
@@ -89,6 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     setState(() {
       _coordList = coords;
+      _isLoading3 = false;
     });
     print(_coordList);
   }
@@ -144,8 +150,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
       ),
-      MapView(),
-      MapView(),
+      _isLoading3 ? Center(child: CupertinoActivityIndicator())
+          : MapView(_coordList),
       SingleChildScrollView(child: NewProduct(_addNewProduct))
     ];
 
@@ -201,7 +207,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     navigationBar: CupertinoNavigationBar(
                       middle: Text('Listings near me'),
                     ),
-                    child: MapView());
+                    child: _isLoading3
+                        ? Center(child: CupertinoActivityIndicator())
+                        : MapView(_coordList));
               },
             );
           case 2:

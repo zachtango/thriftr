@@ -15,6 +15,11 @@ public final class R {
      */
     public static final int alpha=0x7f010000;
     /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int ambientEnabled=0x7f010001;
+    /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -30,12 +35,40 @@ public final class R {
      * <tr><td>wide</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int buttonSize=0x7f010001;
+    public static final int buttonSize=0x7f010002;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraBearing=0x7f010003;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraMaxZoomPreference=0x7f010004;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraMinZoomPreference=0x7f010005;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraTargetLat=0x7f010006;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraTargetLng=0x7f010007;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraTilt=0x7f010008;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int cameraZoom=0x7f010009;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int circleCrop=0x7f010002;
+    public static final int circleCrop=0x7f01000a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -52,14 +85,14 @@ public final class R {
      * <tr><td>light</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int colorScheme=0x7f010003;
+    public static final int colorScheme=0x7f01000b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int coordinatorLayoutStyle=0x7f010004;
+    public static final int coordinatorLayoutStyle=0x7f01000c;
     /**
      * The reference to the font file to be used. This should be a file in the res/font folder
      * and should therefore have an R reference value. E.g. @font/myfont
@@ -68,13 +101,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int font=0x7f010005;
+    public static final int font=0x7f01000d;
     /**
      * The authority of the Font Provider to be used for the request.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderAuthority=0x7f010006;
+    public static final int fontProviderAuthority=0x7f01000e;
     /**
      * The sets of hashes for the certificates the provider should be signed with. This is
      * used to verify the identity of the provider, and is only required if the provider is not
@@ -86,7 +119,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int fontProviderCerts=0x7f010007;
+    public static final int fontProviderCerts=0x7f01000f;
     /**
      * The strategy to be used when fetching font data from a font provider in XML layouts.
      * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
@@ -113,7 +146,7 @@ public final class R {
      * default typeface will be used instead.</td></tr>
      * </table>
      */
-    public static final int fontProviderFetchStrategy=0x7f010008;
+    public static final int fontProviderFetchStrategy=0x7f010010;
     /**
      * The length of the timeout during fetching.
      * <p>May be an integer value, such as "<code>100</code>".
@@ -127,21 +160,21 @@ public final class R {
      * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      */
-    public static final int fontProviderFetchTimeout=0x7f010009;
+    public static final int fontProviderFetchTimeout=0x7f010011;
     /**
      * The package for the Font Provider to be used for the request. This is used to verify
      * the identity of the provider.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderPackage=0x7f01000a;
+    public static final int fontProviderPackage=0x7f010012;
     /**
      * The query to be sent over to the provider. Refer to your font provider's documentation
      * on the format of this string.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderQuery=0x7f01000b;
+    public static final int fontProviderQuery=0x7f010013;
     /**
      * The style of the given font file. This will be used when the font is being loaded into
      * the font stack and will override any style information in the font's header tables. If
@@ -156,7 +189,7 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fontStyle=0x7f01000c;
+    public static final int fontStyle=0x7f010014;
     /**
      * The variation settings to be applied to the font. The string should be in the following
      * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
@@ -165,7 +198,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontVariationSettings=0x7f01000d;
+    public static final int fontVariationSettings=0x7f010015;
     /**
      * The weight of the given font file. This will be used when the font is being loaded into
      * the font stack and will override any weight information in the font's header tables. Must
@@ -174,11 +207,11 @@ public final class R {
      * in the font's header tables will be used.
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int fontWeight=0x7f01000e;
+    public static final int fontWeight=0x7f010016;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int imageAspectRatio=0x7f01000f;
+    public static final int imageAspectRatio=0x7f010017;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -191,7 +224,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int imageAspectRatioAdjust=0x7f010010;
+    public static final int imageAspectRatioAdjust=0x7f010018;
     /**
      * A reference to an array of integers representing the
      * locations of horizontal keylines in dp from the starting edge.
@@ -203,7 +236,23 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int keylines=0x7f010011;
+    public static final int keylines=0x7f010019;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int latLngBoundsNorthEastLatitude=0x7f01001a;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int latLngBoundsNorthEastLongitude=0x7f01001b;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int latLngBoundsSouthWestLatitude=0x7f01001c;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int latLngBoundsSouthWestLongitude=0x7f01001d;
     /**
      * The id of an anchor view that this view should position relative to.
      * <p>May be a reference to another resource, in the form
@@ -211,7 +260,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout_anchor=0x7f010012;
+    public static final int layout_anchor=0x7f01001e;
     /**
      * Specifies how an object should position relative to an anchor, on both the X and Y axes,
      * within its parent's bounds.
@@ -243,14 +292,14 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      */
-    public static final int layout_anchorGravity=0x7f010013;
+    public static final int layout_anchorGravity=0x7f01001f;
     /**
      * The class name of a Behavior class defining special runtime behavior
      * for this child view.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int layout_behavior=0x7f010014;
+    public static final int layout_behavior=0x7f010020;
     /**
      * Specifies how this view dodges the inset edges of the CoordinatorLayout.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -269,7 +318,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
      * </table>
      */
-    public static final int layout_dodgeInsetEdges=0x7f010015;
+    public static final int layout_dodgeInsetEdges=0x7f010021;
     /**
      * Specifies how this view insets the CoordinatorLayout and make some other views
      * dodge it.
@@ -288,14 +337,34 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
      * </table>
      */
-    public static final int layout_insetEdge=0x7f010016;
+    public static final int layout_insetEdge=0x7f010022;
     /**
      * The index of a keyline this view should position relative to.
      * android:layout_gravity will affect how the view aligns to the
      * specified keyline.
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_keyline=0x7f010017;
+    public static final int layout_keyline=0x7f010023;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int liteMode=0x7f010024;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>hybrid</td><td>4</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>normal</td><td>1</td><td></td></tr>
+     * <tr><td>satellite</td><td>2</td><td></td></tr>
+     * <tr><td>terrain</td><td>3</td><td></td></tr>
+     * </table>
+     */
+    public static final int mapType=0x7f010025;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -304,7 +373,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int scopeUris=0x7f010018;
+    public static final int scopeUris=0x7f010026;
     /**
      * Drawable to display behind the status bar when the view is set to draw behind it.
      * <p>May be a reference to another resource, in the form
@@ -315,13 +384,63 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int statusBarBackground=0x7f010019;
+    public static final int statusBarBackground=0x7f010027;
     /**
      * The index of the font in the tcc font file. If the font file referenced is not in the
      * tcc format, this attribute needs not be specified.
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int ttcIndex=0x7f01001a;
+    public static final int ttcIndex=0x7f010028;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiCompass=0x7f010029;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiMapToolbar=0x7f01002a;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiRotateGestures=0x7f01002b;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiScrollGestures=0x7f01002c;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiScrollGesturesDuringRotateOrZoom=0x7f01002d;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiTiltGestures=0x7f01002e;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiZoomControls=0x7f01002f;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int uiZoomGestures=0x7f010030;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int useViewLifecycle=0x7f010031;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int zOrderOnTop=0x7f010032;
   }
   public static final class color {
     public static final int common_google_signin_btn_text_dark=0x7f020000;
@@ -337,11 +456,8 @@ public final class R {
     public static final int common_google_signin_btn_tint=0x7f02000a;
     public static final int notification_action_color_filter=0x7f02000b;
     public static final int notification_icon_bg_color=0x7f02000c;
-    public static final int notification_material_background_media_default_color=0x7f02000d;
-    public static final int primary_text_default_material_dark=0x7f02000e;
-    public static final int ripple_material_light=0x7f02000f;
-    public static final int secondary_text_default_material_dark=0x7f020010;
-    public static final int secondary_text_default_material_light=0x7f020011;
+    public static final int ripple_material_light=0x7f02000d;
+    public static final int secondary_text_default_material_light=0x7f02000e;
   }
   public static final class dimen {
     public static final int compat_button_inset_horizontal_material=0x7f030000;
@@ -366,10 +482,6 @@ public final class R {
     public static final int notification_subtext_size=0x7f030013;
     public static final int notification_top_pad=0x7f030014;
     public static final int notification_top_pad_large_text=0x7f030015;
-    public static final int subtitle_corner_radius=0x7f030016;
-    public static final int subtitle_outline_width=0x7f030017;
-    public static final int subtitle_shadow_offset=0x7f030018;
-    public static final int subtitle_shadow_radius=0x7f030019;
   }
   public static final class drawable {
     public static final int common_full_open_on_phone=0x7f040000;
@@ -408,85 +520,73 @@ public final class R {
     public static final int notify_panel_notification_icon_bg=0x7f040021;
   }
   public static final class id {
-    public static final int action0=0x7f050000;
-    public static final int action_container=0x7f050001;
-    public static final int action_divider=0x7f050002;
-    public static final int action_image=0x7f050003;
-    public static final int action_text=0x7f050004;
-    public static final int actions=0x7f050005;
-    public static final int adjust_height=0x7f050006;
-    public static final int adjust_width=0x7f050007;
-    public static final int all=0x7f050008;
-    public static final int async=0x7f050009;
-    public static final int auto=0x7f05000a;
-    public static final int blocking=0x7f05000b;
-    public static final int bottom=0x7f05000c;
-    public static final int cancel_action=0x7f05000d;
-    public static final int center=0x7f05000e;
-    public static final int center_horizontal=0x7f05000f;
-    public static final int center_vertical=0x7f050010;
-    public static final int chronometer=0x7f050011;
-    public static final int clip_horizontal=0x7f050012;
-    public static final int clip_vertical=0x7f050013;
-    public static final int dark=0x7f050014;
-    public static final int end=0x7f050015;
-    public static final int end_padder=0x7f050016;
-    public static final int fill=0x7f050017;
-    public static final int fill_horizontal=0x7f050018;
-    public static final int fill_vertical=0x7f050019;
-    public static final int forever=0x7f05001a;
-    public static final int icon=0x7f05001b;
-    public static final int icon_group=0x7f05001c;
-    public static final int icon_only=0x7f05001d;
-    public static final int info=0x7f05001e;
-    public static final int italic=0x7f05001f;
-    public static final int left=0x7f050020;
-    public static final int light=0x7f050021;
-    public static final int line1=0x7f050022;
-    public static final int line3=0x7f050023;
-    public static final int media_actions=0x7f050024;
-    public static final int none=0x7f050025;
-    public static final int normal=0x7f050026;
-    public static final int notification_background=0x7f050027;
-    public static final int notification_main_column=0x7f050028;
-    public static final int notification_main_column_container=0x7f050029;
-    public static final int right=0x7f05002a;
-    public static final int right_icon=0x7f05002b;
-    public static final int right_side=0x7f05002c;
-    public static final int standard=0x7f05002d;
-    public static final int start=0x7f05002e;
-    public static final int status_bar_latest_event_content=0x7f05002f;
-    public static final int tag_transition_group=0x7f050030;
-    public static final int tag_unhandled_key_event_manager=0x7f050031;
-    public static final int tag_unhandled_key_listeners=0x7f050032;
-    public static final int text=0x7f050033;
-    public static final int text2=0x7f050034;
-    public static final int time=0x7f050035;
-    public static final int title=0x7f050036;
-    public static final int top=0x7f050037;
-    public static final int wide=0x7f050038;
+    public static final int action_container=0x7f050000;
+    public static final int action_divider=0x7f050001;
+    public static final int action_image=0x7f050002;
+    public static final int action_text=0x7f050003;
+    public static final int actions=0x7f050004;
+    public static final int adjust_height=0x7f050005;
+    public static final int adjust_width=0x7f050006;
+    public static final int all=0x7f050007;
+    public static final int async=0x7f050008;
+    public static final int auto=0x7f050009;
+    public static final int blocking=0x7f05000a;
+    public static final int bottom=0x7f05000b;
+    public static final int center=0x7f05000c;
+    public static final int center_horizontal=0x7f05000d;
+    public static final int center_vertical=0x7f05000e;
+    public static final int chronometer=0x7f05000f;
+    public static final int clip_horizontal=0x7f050010;
+    public static final int clip_vertical=0x7f050011;
+    public static final int dark=0x7f050012;
+    public static final int end=0x7f050013;
+    public static final int fill=0x7f050014;
+    public static final int fill_horizontal=0x7f050015;
+    public static final int fill_vertical=0x7f050016;
+    public static final int forever=0x7f050017;
+    public static final int hybrid=0x7f050018;
+    public static final int icon=0x7f050019;
+    public static final int icon_group=0x7f05001a;
+    public static final int icon_only=0x7f05001b;
+    public static final int info=0x7f05001c;
+    public static final int italic=0x7f05001d;
+    public static final int left=0x7f05001e;
+    public static final int light=0x7f05001f;
+    public static final int line1=0x7f050020;
+    public static final int line3=0x7f050021;
+    public static final int none=0x7f050022;
+    public static final int normal=0x7f050023;
+    public static final int notification_background=0x7f050024;
+    public static final int notification_main_column=0x7f050025;
+    public static final int notification_main_column_container=0x7f050026;
+    public static final int right=0x7f050027;
+    public static final int right_icon=0x7f050028;
+    public static final int right_side=0x7f050029;
+    public static final int satellite=0x7f05002a;
+    public static final int standard=0x7f05002b;
+    public static final int start=0x7f05002c;
+    public static final int tag_transition_group=0x7f05002d;
+    public static final int tag_unhandled_key_event_manager=0x7f05002e;
+    public static final int tag_unhandled_key_listeners=0x7f05002f;
+    public static final int terrain=0x7f050030;
+    public static final int text=0x7f050031;
+    public static final int text2=0x7f050032;
+    public static final int time=0x7f050033;
+    public static final int title=0x7f050034;
+    public static final int top=0x7f050035;
+    public static final int wide=0x7f050036;
   }
   public static final class integer {
-    public static final int cancel_button_image_alpha=0x7f060000;
-    public static final int google_play_services_version=0x7f060001;
-    public static final int status_bar_notification_info_maxnum=0x7f060002;
+    public static final int google_play_services_version=0x7f060000;
+    public static final int status_bar_notification_info_maxnum=0x7f060001;
   }
   public static final class layout {
     public static final int notification_action=0x7f070000;
     public static final int notification_action_tombstone=0x7f070001;
-    public static final int notification_media_action=0x7f070002;
-    public static final int notification_media_cancel_action=0x7f070003;
-    public static final int notification_template_big_media=0x7f070004;
-    public static final int notification_template_big_media_custom=0x7f070005;
-    public static final int notification_template_big_media_narrow=0x7f070006;
-    public static final int notification_template_big_media_narrow_custom=0x7f070007;
-    public static final int notification_template_custom_big=0x7f070008;
-    public static final int notification_template_icon_group=0x7f070009;
-    public static final int notification_template_lines_media=0x7f07000a;
-    public static final int notification_template_media=0x7f07000b;
-    public static final int notification_template_media_custom=0x7f07000c;
-    public static final int notification_template_part_chronometer=0x7f07000d;
-    public static final int notification_template_part_time=0x7f07000e;
+    public static final int notification_template_custom_big=0x7f070002;
+    public static final int notification_template_icon_group=0x7f070003;
+    public static final int notification_template_part_chronometer=0x7f070004;
+    public static final int notification_template_part_time=0x7f070005;
   }
   public static final class mipmap {
     public static final int ic_launcher=0x7f080000;
@@ -516,17 +616,12 @@ public final class R {
     public static final int LaunchTheme=0x7f0a0000;
     public static final int TextAppearance_Compat_Notification=0x7f0a0001;
     public static final int TextAppearance_Compat_Notification_Info=0x7f0a0002;
-    public static final int TextAppearance_Compat_Notification_Info_Media=0x7f0a0003;
-    public static final int TextAppearance_Compat_Notification_Line2=0x7f0a0004;
-    public static final int TextAppearance_Compat_Notification_Line2_Media=0x7f0a0005;
-    public static final int TextAppearance_Compat_Notification_Media=0x7f0a0006;
-    public static final int TextAppearance_Compat_Notification_Time=0x7f0a0007;
-    public static final int TextAppearance_Compat_Notification_Time_Media=0x7f0a0008;
-    public static final int TextAppearance_Compat_Notification_Title=0x7f0a0009;
-    public static final int TextAppearance_Compat_Notification_Title_Media=0x7f0a000a;
-    public static final int Widget_Compat_NotificationActionContainer=0x7f0a000b;
-    public static final int Widget_Compat_NotificationActionText=0x7f0a000c;
-    public static final int Widget_Support_CoordinatorLayout=0x7f0a000d;
+    public static final int TextAppearance_Compat_Notification_Line2=0x7f0a0003;
+    public static final int TextAppearance_Compat_Notification_Time=0x7f0a0004;
+    public static final int TextAppearance_Compat_Notification_Title=0x7f0a0005;
+    public static final int Widget_Compat_NotificationActionContainer=0x7f0a0006;
+    public static final int Widget_Compat_NotificationActionText=0x7f0a0007;
+    public static final int Widget_Support_CoordinatorLayout=0x7f0a0008;
   }
   public static final class styleable {
     /**
@@ -593,7 +688,7 @@ public final class R {
      * @see #CoordinatorLayout_statusBarBackground
      */
     public static final int[] CoordinatorLayout={
-      0x7f010011, 0x7f010019
+      0x7f010019, 0x7f010027
     };
     /**
      * <p>
@@ -655,8 +750,8 @@ public final class R {
      * @see #CoordinatorLayout_Layout_layout_keyline
      */
     public static final int[] CoordinatorLayout_Layout={
-      0x010100b3, 0x7f010012, 0x7f010013, 0x7f010014, 
-      0x7f010015, 0x7f010016, 0x7f010017
+      0x010100b3, 0x7f01001e, 0x7f01001f, 0x7f010020, 
+      0x7f010021, 0x7f010022, 0x7f010023
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
@@ -831,8 +926,8 @@ public final class R {
      * @see #FontFamily_fontProviderQuery
      */
     public static final int[] FontFamily={
-      0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 
-      0x7f01000a, 0x7f01000b
+      0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 
+      0x7f010012, 0x7f010013
     };
     /**
      * <p>
@@ -968,8 +1063,8 @@ public final class R {
      */
     public static final int[] FontFamilyFont={
       0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 
-      0x01010570, 0x7f010005, 0x7f01000c, 0x7f01000d, 
-      0x7f01000e, 0x7f01001a
+      0x01010570, 0x7f01000d, 0x7f010014, 0x7f010015, 
+      0x7f010016, 0x7f010028
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#font}
@@ -1361,7 +1456,7 @@ public final class R {
      * @see #LoadingImageView_imageAspectRatioAdjust
      */
     public static final int[] LoadingImageView={
-      0x7f010002, 0x7f01000f, 0x7f010010
+      0x7f01000a, 0x7f010017, 0x7f010018
     };
     /**
      * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#circleCrop}
@@ -1401,6 +1496,310 @@ public final class R {
      */
     public static final int LoadingImageView_imageAspectRatioAdjust=2;
     /**
+     * Attributes that can be used with a MapAttrs.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #MapAttrs_ambientEnabled com.example.flutter_app:ambientEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraBearing com.example.flutter_app:cameraBearing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraMaxZoomPreference com.example.flutter_app:cameraMaxZoomPreference}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraMinZoomPreference com.example.flutter_app:cameraMinZoomPreference}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraTargetLat com.example.flutter_app:cameraTargetLat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraTargetLng com.example.flutter_app:cameraTargetLng}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraTilt com.example.flutter_app:cameraTilt}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_cameraZoom com.example.flutter_app:cameraZoom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsNorthEastLatitude com.example.flutter_app:latLngBoundsNorthEastLatitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsNorthEastLongitude com.example.flutter_app:latLngBoundsNorthEastLongitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsSouthWestLatitude com.example.flutter_app:latLngBoundsSouthWestLatitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_latLngBoundsSouthWestLongitude com.example.flutter_app:latLngBoundsSouthWestLongitude}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_liteMode com.example.flutter_app:liteMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_mapType com.example.flutter_app:mapType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiCompass com.example.flutter_app:uiCompass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiMapToolbar com.example.flutter_app:uiMapToolbar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiRotateGestures com.example.flutter_app:uiRotateGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiScrollGestures com.example.flutter_app:uiScrollGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiScrollGesturesDuringRotateOrZoom com.example.flutter_app:uiScrollGesturesDuringRotateOrZoom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiTiltGestures com.example.flutter_app:uiTiltGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiZoomControls com.example.flutter_app:uiZoomControls}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiZoomGestures com.example.flutter_app:uiZoomGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_useViewLifecycle com.example.flutter_app:useViewLifecycle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_zOrderOnTop com.example.flutter_app:zOrderOnTop}</code></td><td></td></tr>
+     * </table>
+     * @see #MapAttrs_ambientEnabled
+     * @see #MapAttrs_cameraBearing
+     * @see #MapAttrs_cameraMaxZoomPreference
+     * @see #MapAttrs_cameraMinZoomPreference
+     * @see #MapAttrs_cameraTargetLat
+     * @see #MapAttrs_cameraTargetLng
+     * @see #MapAttrs_cameraTilt
+     * @see #MapAttrs_cameraZoom
+     * @see #MapAttrs_latLngBoundsNorthEastLatitude
+     * @see #MapAttrs_latLngBoundsNorthEastLongitude
+     * @see #MapAttrs_latLngBoundsSouthWestLatitude
+     * @see #MapAttrs_latLngBoundsSouthWestLongitude
+     * @see #MapAttrs_liteMode
+     * @see #MapAttrs_mapType
+     * @see #MapAttrs_uiCompass
+     * @see #MapAttrs_uiMapToolbar
+     * @see #MapAttrs_uiRotateGestures
+     * @see #MapAttrs_uiScrollGestures
+     * @see #MapAttrs_uiScrollGesturesDuringRotateOrZoom
+     * @see #MapAttrs_uiTiltGestures
+     * @see #MapAttrs_uiZoomControls
+     * @see #MapAttrs_uiZoomGestures
+     * @see #MapAttrs_useViewLifecycle
+     * @see #MapAttrs_zOrderOnTop
+     */
+    public static final int[] MapAttrs={
+      0x7f010001, 0x7f010003, 0x7f010004, 0x7f010005, 
+      0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 
+      0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d, 
+      0x7f010024, 0x7f010025, 0x7f010029, 0x7f01002a, 
+      0x7f01002b, 0x7f01002c, 0x7f01002d, 0x7f01002e, 
+      0x7f01002f, 0x7f010030, 0x7f010031, 0x7f010032
+    };
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#ambientEnabled}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.flutter_app:ambientEnabled
+     */
+    public static final int MapAttrs_ambientEnabled=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#cameraBearing}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.flutter_app:cameraBearing
+     */
+    public static final int MapAttrs_cameraBearing=1;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#cameraMaxZoomPreference}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.flutter_app:cameraMaxZoomPreference
+     */
+    public static final int MapAttrs_cameraMaxZoomPreference=2;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#cameraMinZoomPreference}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.flutter_app:cameraMinZoomPreference
+     */
+    public static final int MapAttrs_cameraMinZoomPreference=3;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#cameraTargetLat}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.flutter_app:cameraTargetLat
+     */
+    public static final int MapAttrs_cameraTargetLat=4;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#cameraTargetLng}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.flutter_app:cameraTargetLng
+     */
+    public static final int MapAttrs_cameraTargetLng=5;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#cameraTilt}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.flutter_app:cameraTilt
+     */
+    public static final int MapAttrs_cameraTilt=6;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#cameraZoom}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.flutter_app:cameraZoom
+     */
+    public static final int MapAttrs_cameraZoom=7;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#latLngBoundsNorthEastLatitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.flutter_app:latLngBoundsNorthEastLatitude
+     */
+    public static final int MapAttrs_latLngBoundsNorthEastLatitude=8;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#latLngBoundsNorthEastLongitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.flutter_app:latLngBoundsNorthEastLongitude
+     */
+    public static final int MapAttrs_latLngBoundsNorthEastLongitude=9;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#latLngBoundsSouthWestLatitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.flutter_app:latLngBoundsSouthWestLatitude
+     */
+    public static final int MapAttrs_latLngBoundsSouthWestLatitude=10;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#latLngBoundsSouthWestLongitude}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.example.flutter_app:latLngBoundsSouthWestLongitude
+     */
+    public static final int MapAttrs_latLngBoundsSouthWestLongitude=11;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#liteMode}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.flutter_app:liteMode
+     */
+    public static final int MapAttrs_liteMode=12;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#mapType}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>hybrid</td><td>4</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>normal</td><td>1</td><td></td></tr>
+     * <tr><td>satellite</td><td>2</td><td></td></tr>
+     * <tr><td>terrain</td><td>3</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.example.flutter_app:mapType
+     */
+    public static final int MapAttrs_mapType=13;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#uiCompass}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.flutter_app:uiCompass
+     */
+    public static final int MapAttrs_uiCompass=14;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#uiMapToolbar}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.flutter_app:uiMapToolbar
+     */
+    public static final int MapAttrs_uiMapToolbar=15;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#uiRotateGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.flutter_app:uiRotateGestures
+     */
+    public static final int MapAttrs_uiRotateGestures=16;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#uiScrollGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.flutter_app:uiScrollGestures
+     */
+    public static final int MapAttrs_uiScrollGestures=17;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#uiScrollGesturesDuringRotateOrZoom}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.flutter_app:uiScrollGesturesDuringRotateOrZoom
+     */
+    public static final int MapAttrs_uiScrollGesturesDuringRotateOrZoom=18;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#uiTiltGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.flutter_app:uiTiltGestures
+     */
+    public static final int MapAttrs_uiTiltGestures=19;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#uiZoomControls}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.flutter_app:uiZoomControls
+     */
+    public static final int MapAttrs_uiZoomControls=20;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#uiZoomGestures}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.flutter_app:uiZoomGestures
+     */
+    public static final int MapAttrs_uiZoomGestures=21;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#useViewLifecycle}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.flutter_app:useViewLifecycle
+     */
+    public static final int MapAttrs_useViewLifecycle=22;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#zOrderOnTop}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.example.flutter_app:zOrderOnTop
+     */
+    public static final int MapAttrs_zOrderOnTop=23;
+    /**
      * Attributes that can be used with a SignInButton.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -1416,7 +1815,7 @@ public final class R {
      * @see #SignInButton_scopeUris
      */
     public static final int[] SignInButton={
-      0x7f010001, 0x7f010003, 0x7f010018
+      0x7f010002, 0x7f01000b, 0x7f010026
     };
     /**
      * <p>This symbol is the offset where the {@link com.example.flutter_app.R.attr#buttonSize}
